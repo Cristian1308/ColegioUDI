@@ -1,0 +1,190 @@
+<html>
+
+<head>
+    <title>Inscripciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+
+    <script type="text/javascript">
+
+        function envio() {
+            swal({
+                title: "Formulario Enviado",
+                text: "Gracias por digilenciar el formulario de Inscripcion!",
+                icon: "success",
+            }).then(function () {
+                window.location = "PageInscripcion.html";
+            });
+        }
+
+
+    </script>
+
+    <!-- layaout borrar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#!">Colegio UDI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- layaout borrar -->
+
+    <form class="container mt-4">
+        <h4>Datos del estudiante</h4>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Identificacion</label>
+                <input type="number" class="form-control" id="inputEmail4" placeholder="Numero Identificacion">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Nombres</label>
+                <input type="Nombres" class="form-control" id="inputPassword4" placeholder="Escribe tus Nombres">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Primer apellido</label>
+                    <input type="text" class="form-control" placeholder="Escribre tu primer apellido">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Segundo apellido</label>
+                    <input type="text" class="form-control" placeholder="Escribre tu Segundo apellido">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Direccion</label>
+                    <input type="text" class="form-control" placeholder="Escribre tu Direccion de domicilio">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Fecha de expedicion del documento</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">Jornada a la que aspra</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Seleccionar</option>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">Grado al que aspra</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Seleccionar</option>
+                        <option>prmero</option>
+                        <option>segundo</option>
+                        <option>tercero</option>
+                        <option>cuarto</option>
+                        <option>qunto</option>
+                        <option>sexto</option>
+                        <option>septmo</option>
+                        <option>octavo</option>
+                        <option>noveno</option>
+                        <option>decmo</option>
+                        <option>once</option>
+
+                    </select>
+                </div>
+                <br>
+                <h4>Datos del acudiente</h4>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Nombres</label>
+                    <input type="Nombres" class="form-control" id="inputPassword4"
+                        placeholder="Escribe los nombres del acudiente">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Apellidos</label>
+                        <input type="text" class="form-control" placeholder="Escribre los apellidos del acudiente">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Celular de contacto</label>
+                        <input type="number" class="form-control" placeholder="Telefono de acudiente">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email Acudiente</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email del acudiente">
+                    </div>
+                    <br>
+                    <h3>Condiciones de vunerabilidad - prioridad </h3>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Condicion de discapacidad</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Seleccionar</option>
+                            <option>No Aplica</option>
+                            <option>Discapacidad Fisica</option>
+                            <option>Discapcidad Auditiva</option>
+                            <option>Discapacidad Visual</option>
+                            <option>Sordoceguera</option>
+                            <option>Discapacidad Intelectual/Mental</option>
+                            <option>Discapacidad Multiple</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="exampleFormControlTextarea1">Descripcion de la discapacidad o otras anotaciones del
+                            aspirante</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Etnia</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Seleccionar</option>
+                            <option>No Aplica</option>
+                            <option>Afrodecendiente</option>
+                            <option>Indigena</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            ¿Acepta las condiciones de politica de seguridad y tratamiento de datos?
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <table>
+                    <tr>
+                        <td widht="100px">
+                            <button type="button" class="btn btn-success" onclick="envio()">Enviar</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-warning">Limpiar</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger">Volver</button>
+                        </td>
+                    </tr>
+                </table>
+
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
