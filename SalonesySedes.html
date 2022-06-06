@@ -26,7 +26,7 @@
 
     function mostrars (){
 
-      swal("Salon Creada", "", "success");
+      swal("Salon Creado", "", "success");
 
      }
 
@@ -77,6 +77,7 @@
               <li><a class="dropdown-item" href="#"></a></li>
               <li><a class="dropdown-item" href="Secretaria Seleccion.html">Proceso Matricula</a></li>
               <li><a class="dropdown-item" href="GradosyCursos.html">Grados y Cursos </a></li>
+              <li><a class="dropdown-item" href="SalonesySedes.html">administracion de sedes y salones</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -160,11 +161,11 @@
 
 <br>
 
-<button type="button" class="btn btn-success" onclick="mostrar()">Buscar Salones</button>
+<button type="button" class="btn btn-success">Buscar</button>
 <br>
 <br>
 <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option selected>Salones creadas</option>
+                <option selected>Salones creados</option>
                 <option value="2">Salon A</option>
                 <option value="1">Salon B</option><	
                 <option value="1">Salon C</option>
@@ -174,12 +175,12 @@
 <h5>Crear Sede</h5>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">Sede</span>
+    <span class="input-group-text" id="basic-addon1">Salon</span>
   </div>
-  <input type="text" class="form-control" placeholder="Escriba la letra de la sede a crear" aria-label="Username" aria-describedby="basic-addon1">
+  <input type="text" class="form-control" placeholder="Escriba la letra dl salon a crear" aria-label="Username" aria-describedby="basic-addon1">
 </div>
 
-<button type="button" class="btn btn-success" onclick="mostrar()">Crear Sede</button>
+<button type="button" class="btn btn-success" onclick="mostrars()">Crear salon</button>
 
                   </div>
                 </div>
